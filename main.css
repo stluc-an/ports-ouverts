@@ -1,6 +1,6 @@
 html, body{
     box-sizing: border-box;
-    
+    height:100vh;
 }
 
 html, body, h2, ul, li{
