@@ -3,36 +3,13 @@ html, body{
     
 }
 
-h2, ul, li{
+html, body, h2, ul, li{
     margin:0;
     padding:0;
 }
 
 h2{
     text-align: center;
-    height: 5%;
-}
-
-.middle{
-    display:flex;
-    height: 90%;
-    width:100%;
-    
-}
-
-.left-border{
-    transform: rotate(-90deg);
-    width: 90%;
-    height:5%;
-}
-
-.frame{
-    width:90%;
-    background:red;
-}
-
-.right-border{
-    transform: rotate(90deg);
 }
 
 nav ul li{
@@ -42,4 +19,61 @@ nav ul li{
 
 .anti-e{
     font-size: 0.5em;
+}
+
+
+.grid {
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "top top top"
+    "left middle right"
+    "bottom bottom bottom";
+    width:100%;
+    height:100%;
+}
+
+.grid-top{
+    grid-area: top;
+}
+
+.grid-left{
+    grid-area: left;
+}
+
+.grid-middle{
+    grid-area: middle;
+    background:#FFF;
+}
+
+.grid-right{
+    grid-area: right;
+}
+
+.grid-bottom{
+    grid-area: bottom; 
+}
+
+iframe{
+    width:100%;
+    height:100%;
+}
+
+
+.an{
+    background-color:#ede9f4;
+}
+
+.an1{
+    background-color:rgba(255, 88, 0, 0.53);
+}
+
+.an2{
+    background-color:rgba(0, 255, 20, 0.49);
+}
+
+.an3{
+    background-color:rgba(20, 0, 255, 0.44);
+    color:white;
 }
