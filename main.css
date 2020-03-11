@@ -1,0 +1,45 @@
+html, body{
+    box-sizing: border-box;
+    
+}
+
+h2, ul, li{
+    margin:0;
+    padding:0;
+}
+
+h2{
+    text-align: center;
+    height: 5%;
+}
+
+.middle{
+    display:flex;
+    height: 90%;
+    width:100%;
+    
+}
+
+.left-border{
+    transform: rotate(-90deg);
+    width: 90%;
+    height:5%;
+}
+
+.frame{
+    width:90%;
+    background:red;
+}
+
+.right-border{
+    transform: rotate(90deg);
+}
+
+nav ul li{
+    display:inline-block;
+    margin: 0 2em;
+}
+
+.anti-e{
+    font-size: 0.5em;
+}
