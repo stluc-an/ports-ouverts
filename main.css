@@ -30,7 +30,6 @@ body {
 
 video{
     max-width: 100%;
-    max-height: 100%;
 }
 
 
@@ -64,4 +63,12 @@ iframe{
 /* TYPOGRAPHY */
 .anti-e{
     font-size: 0.5em;
+}
+
+/* TWITCH */
+#visit_stream{
+    height:70vh;
+}
+#visit_chat{
+    height:30vh;
 }
