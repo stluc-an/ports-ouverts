@@ -1,79 +1,67 @@
-html, body{
-    box-sizing: border-box;
-    height:100vh;
+:root {
+    --colbg: #fff;
+    --coltx: #000;
+    --colan1: rgba(255, 88, 0, 0.53);
+    --colan2: rgba(0, 255, 20, 0.49);
+    --colan3: rgba(20, 0, 255, 0.44);
 }
 
-html, body, h2, ul, li{
-    margin:0;
-    padding:0;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colbg: #000;
+    --coltx: #fff;
+  }
 }
 
-h2{
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
 }
 
-nav ul li{
-    display:inline-block;
-    margin: 0 2em;
-}
-
-.anti-e{
-    font-size: 0.5em;
-}
-
-
-.grid {
-    display:grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas: 
-    "top top top"
-    "left middle right"
-    "bottom bottom bottom";
+body {
+    font-family: sans-serif;
+    padding:2em;
     width:100%;
-    height:100%;
+    min-height: 100vh;
 }
 
-.grid-top{
-    grid-area: top;
+/* ELEMENTS */
+
+video{
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.grid-left{
-    grid-area: left;
+
+/* LAYOUT */
+
+body.index{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
-.grid-middle{
-    grid-area: middle;
-    background:#FFF;
+body.index > header{
+    width: 20%;
+    min-height: 100%;
 }
 
-.grid-right{
-    grid-area: right;
+body.index > main{
+    width: 80%;
+    min-height: 100%;
+    height:auto;
 }
 
-.grid-bottom{
-    grid-area: bottom; 
-}
 
 iframe{
     width:100%;
     height:100%;
+    border:none;
 }
 
 
-.an{
-    background-color:#ede9f4;
-}
-
-.an1{
-    background-color:rgba(255, 88, 0, 0.53);
-}
-
-.an2{
-    background-color:rgba(0, 255, 20, 0.49);
-}
-
-.an3{
-    background-color:rgba(20, 0, 255, 0.44);
-    color:white;
+/* TYPOGRAPHY */
+.anti-e{
+    font-size: 0.5em;
 }
