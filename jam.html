@@ -10,6 +10,19 @@
 
 <body>
     <h2>Jam</h2>
+    
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="jam1_vid"></div>
+<script type="text/javascript">
+  var options = {
+    width: "100%",
+    height: "40vh",
+    channel: "thebeav21",
+    parent: ["127.0.0.1", "stluc-an.github.io"]
+  };
+  var player = new Twitch.Player("jam1_vid", options);
+  player.setVolume(0.5);
+</script>
 
 </body>
 
