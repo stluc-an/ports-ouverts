@@ -9,20 +9,52 @@
 </head>
 
 <body>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
     <h2>Jam</h2>
+    <p>Découvrez le développement d'un projet numérique en direct!</p>
+
+    <section id="jam_jar">
+        <div class=jam_vid id="jam1_vid"></div>
+        <div class=jam_vid id="jam2_vid"></div>
+        <div class=jam_vid id="jam3_vid"></div>
+        <div class=jam_vid id="jam4_vid"><iframe src="https://minnit.chat/visitan?embed&mobile" style="border:none;width:90%;height:400px;" allowTransparency="true"></iframe></div>
+    </section>
     
-    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-<div id="jam1_vid"></div>
-<script type="text/javascript">
-  var options = {
-    width: "100%",
-    height: "40vh",
-    channel: "thebeav21",
-    parent: ["127.0.0.1", "stluc-an.github.io"]
-  };
-  var player = new Twitch.Player("jam1_vid", options);
-  player.setVolume(0.5);
-</script>
+    <h3>Dernière version</h3>
+    <p>(ça pourrait être un stream, mais ça oblige d'y rejouer en boucle... sinon une bête vidéo - mais ça oblige de reposter une vidéo à chaque fois?)</p>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/6pCFscr3hVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height:40vh;"></iframe>
+    <p>Lien itch.io avec la dernière version à télécharger!</p>
+
+
+    <script type="text/javascript">
+        var options1 = {
+            width: "100%",
+            height: "40vh",
+            channel: "thebeav21",
+            parent: ["127.0.0.1", "stluc-an.github.io"]
+        };
+        var player1 = new Twitch.Player("jam1_vid", options1);
+        player1.setVolume(0.3);
+
+        var options2 = {
+            width: "100%",
+            height: "40vh",
+            channel: "incarne",
+            parent: ["127.0.0.1", "stluc-an.github.io"]
+        };
+        var player2 = new Twitch.Player("jam2_vid", options2);
+        player2.setVolume(0.3);
+        
+        var options3 = {
+            width: "100%",
+            height: "40vh",
+            channel: "herhane",
+            parent: ["127.0.0.1", "stluc-an.github.io"]
+        };
+        var player3 = new Twitch.Player("jam3_vid", options3);
+        player3.setVolume(0.3);
+
+    </script>
 
 </body>
 
